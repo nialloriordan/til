@@ -8,7 +8,7 @@ the local timezone is always UTC.
 
 To change the timezone you can add the following to your dockerfile:
 
-```bash
+```docker
 ENV TZ=Europe/London # specify timezone
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone # update timezone from UTC to London time zone
 ```
