@@ -20,7 +20,7 @@ Example:
 import pendulum
 
 tz = "Europe/London"
-local_tz = pendulum.timezone("Europe/Amsterdam")
+local_tz = pendulum.timezone(tz)
 default_args=dict(
     start_date=datetime(2021, 3, 28, tzinfo=local_tz),
     owner='airflow'
